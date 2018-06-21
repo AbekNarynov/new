@@ -5,4 +5,15 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+
+    <!-- Activity_main_drawer -->
+    <string name="activity_main_drawer_all_tasks">Все задачи</string>
+    <string name="activity_main_drawer_my_tasks">Мои задачи</string>
+    <string name="activity_main_drawer_settings">Настройки</string>
+    <string name="activity_main_drawer_other">Разное</string>
+
+    <!--User-->
+    <string name="nav_header_main_photo">Фотография пользователя</string>
+    <string name="nav_header_main_guest">Гость</string>
+    <string name="nav_header_main_email">guest@mail.com</string>
 </resources>

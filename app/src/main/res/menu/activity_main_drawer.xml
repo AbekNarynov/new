@@ -5,33 +5,21 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:id="@+id/nav_all_tasks"
+            android:icon="@drawable/ic_menu_all_tasks"
+            android:title="@string/activity_main_drawer_all_tasks" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
-        <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
-        <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/nav_my_tasks"
+            android:icon="@drawable/ic_menu_my_tasks"
+            android:title="@string/activity_main_drawer_my_tasks" />
     </group>
 
-    <item android:title="Communicate">
+    <item android:title="@string/activity_main_drawer_other">
         <menu>
             <item
-                android:id="@+id/nav_share"
-                android:icon="@drawable/ic_menu_share"
-                android:title="Share" />
-            <item
-                android:id="@+id/nav_send"
-                android:icon="@drawable/ic_menu_send"
-                android:title="Send" />
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="@string/activity_main_drawer_settings" />
         </menu>
     </item>
 
