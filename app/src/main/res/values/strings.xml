@@ -1,5 +1,10 @@
 <resources>
+    <!-- App -->
     <string name="app_name">New Project</string>
+    <string name="app_version">Версия 1.0</string>
+    <string name="app_copyrigh">© 2018 New Project Inc.</string>
+    <string name="app_rights">All rights reserved.</string>
+    <string name="app_logo">Логотип</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -11,8 +16,9 @@
     <string name="activity_main_drawer_my_tasks">Мои задачи</string>
     <string name="activity_main_drawer_settings">Настройки</string>
     <string name="activity_main_drawer_other">Разное</string>
+    <string name="activity_main_drawer_about">О программе</string>
 
-    <!--User-->
+    <!-- User -->
     <string name="nav_header_main_photo">Фотография пользователя</string>
     <string name="nav_header_main_guest">Гость</string>
     <string name="nav_header_main_email">guest@mail.com</string>
