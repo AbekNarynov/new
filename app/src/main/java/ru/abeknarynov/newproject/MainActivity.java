@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -13,6 +15,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -24,12 +29,15 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_main);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fabCreateTask);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+
+                Intent intent = new Intent(MainActivity.this, CreateTaskActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -41,6 +49,31 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+
+////////////////////////////////////
+        RecyclerView myTasksRecyclerView = (RecyclerView)findViewById(R.id.all_tasks_recycler_view);
+        myTasksRecyclerView.setHasFixedSize(true);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+        myTasksRecyclerView.setLayoutManager(linearLayoutManager);
+
+        List<Task> users = new ArrayList<>();
+        for (int i = 0; i < 10; i++) {
+            users.add(new Task(
+                    "dsdfsd",
+                    "78",
+                    123
+            ));
+        }
+
+        TasksRVAdapter adapter = new TasksRVAdapter(users, new TasksRVAdapter.OnItemClickListener() {
+            @Override public void onItemClick(Task item) {
+//                searchUserId = item.id;
+//                showSessionsInRecyclerView("http://abeknarynov.ru/mytiming/changed/search_sessions.php?user_id=" + encodeToBase64(searchUserId));
+            }
+        });
+        myTasksRecyclerView.setAdapter(adapter);
+        ///////////////////////////////
     }
 
     @Override
@@ -84,7 +117,8 @@ public class MainActivity extends AppCompatActivity
         if (id == R.id.nav_all_tasks) {
             // Handle the camera action
         } else if (id == R.id.nav_my_tasks) {
-
+            Intent intent = new Intent(MainActivity.this, MyTasksActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_settings) {
 
         } else if (id == R.id.nav_about) {
