@@ -37,4 +37,29 @@
         <item name="android:layout_marginRight">@dimen/nav_header_vertical_spacing</item>
     </style>
 
+    <!-- Login/Registration Button -->
+    <style name="LoginButton" parent="Theme.AppCompat.Light">
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/button_text_size</item>
+        <item name="android:padding">@dimen/button_padding</item>
+        <item name="android:background">@drawable/input_background</item>
+        <item name="android:layout_marginTop">@dimen/button_margin_top</item>W
+    </style>
+
+    <!-- Login/Registration Input -->
+    <style name="LoginInput" parent="Theme.AppCompat.Light">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textSize">@dimen/input_text_size</item>
+        <item name="android:layout_height">@dimen/input_height</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:background">@drawable/input_background</item>
+        <item name="android:padding">@dimen/input_padding</item>
+        <!--<item name="android:layout_marginBottom">@dimen/nav_header_vertical_spacing</item>-->
+    </style>
+
 </resources>

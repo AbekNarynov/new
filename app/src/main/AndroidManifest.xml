@@ -28,7 +28,9 @@
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login" />
-        <activity android:name=".CreateTaskActivity" />
+        <activity
+            android:name=".CreateTaskActivity"
+            android:label="@string/title_activity_create_task" />
         <activity android:name=".MyTasksActivity"></activity>
     </application>
 

@@ -12,7 +12,7 @@
         android:theme="@style/AppTheme.AppBarOverlay">
 
         <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar_main"
+            android:id="@+id/toolbar_create_task"
             app:popupTheme="@style/AppTheme.PopupOverlay"
             style="@style/Toolbar" />
 

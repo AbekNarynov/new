@@ -5,4 +5,5 @@
     <color name="colorPrimaryTooDark">#1B5E20</color>
     <color name="colorAccent">#00C853</color>
     <color name="colorWhite">#ffffff</color>
+    <color name="colorText">#777777</color>
 </resources>
